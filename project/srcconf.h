@@ -17,7 +17,6 @@
 #include "evtimer.h"
 
 #include "spion_shell.h"
-#include "spion_gpt.h"
 
 #endif
 

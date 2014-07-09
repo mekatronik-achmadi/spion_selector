@@ -1,0 +1,7 @@
+chconf.h
+halconf.h
+main.c
+mcuconf.h
+spion_shell.c
+spion_shell.h
+srcconf.h

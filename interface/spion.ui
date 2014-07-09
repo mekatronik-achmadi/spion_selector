@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>spion</class>
+ <widget class="QMainWindow" name="spion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>155</width>
+    <height>167</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>spion</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Serial Communication</string>
+    </property>
+    <widget class="QComboBox" name="cmbPort">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>79</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>ttyUSB0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyUSB1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyUSB2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyACM0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyACM1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyACM2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyATK0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyATK1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ttyATK2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>52</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PORT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnOpen">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Open</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>155</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAction">
+    <property name="title">
+     <string>Action</string>
+    </property>
+    <addaction name="actionGrip"/>
+    <addaction name="actionUngrip"/>
+    <addaction name="actionTake"/>
+    <addaction name="actionUnTake"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAboutQt"/>
+    <addaction name="actionAboutApp"/>
+   </widget>
+   <addaction name="menuAction"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionGrip">
+   <property name="text">
+    <string>Grip</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionUngrip">
+   <property name="text">
+    <string>UnGrip</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionTake">
+   <property name="text">
+    <string>Take</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionUnTake">
+   <property name="text">
+    <string>UnTake</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>AboutQt</string>
+   </property>
+  </action>
+  <action name="actionAboutApp">
+   <property name="text">
+    <string>AboutApp</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

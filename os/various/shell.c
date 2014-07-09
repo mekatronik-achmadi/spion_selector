@@ -97,13 +97,25 @@ static void cmd_info(BaseSequentialStream *chp, int argc, char *argv[]) {
   chprintf(chp, "Build time:   %s%s%s\r\n", __DATE__, " - ", __TIME__);
 #endif
 #endif
+  return;
 }
+
+// static void cmd_systime(BaseSequentialStream *chp, int argc, char *argv[]) {
+// 
+//   (void)argv;
+//   if (argc > 0) {
+//     usage(chp, "systime");
+//     return;
+//   }
+//   chprintf(chp, "%lu\r\n", (unsigned long)chTimeNow());
+// }
 
 /**
  * @brief   Array of the default commands.
  */
 static ShellCommand local_commands[] = {
   {"info", cmd_info},
+//   {"systime", cmd_systime},
   {NULL, NULL}
 };
 
@@ -138,9 +150,9 @@ static msg_t shell_thread(void *p) {
   char *args[SHELL_MAX_ARGUMENTS + 1];
 
   chRegSetThreadName("shell");
-  chprintf(chp, "\r\nChibiOS/RT Shell\r\n");
+//   chprintf(chp, "\r\nChibiOS/RT Shell\r\n");
   while (TRUE) {
-    chprintf(chp, "mamad_OS> ");
+//     chprintf(chp, "mamad_OS> ");
     if (shellGetLine(chp, line, sizeof(line))) {
       chprintf(chp, "\r\nlogout");
       break;
@@ -170,7 +182,7 @@ static msg_t shell_thread(void *p) {
           usage(chp, "help");
           continue;
         }
-//         chprintf(chp, "Commands: help exit ");
+        chprintf(chp, "Commands: help exit ");
 	chprintf(chp, "Available Commands : \r\n");
 	chprintf(chp,"help\r\n");
         list_commands(chp, local_commands);
@@ -275,27 +287,32 @@ bool_t shellGetLine(BaseSequentialStream *chp, char *line, unsigned size) {
     if (chSequentialStreamRead(chp, (uint8_t *)&c, 1) == 0)
       return TRUE;
     if (c == 4) {
-      chprintf(chp, "^D");
+//       chprintf(chp, "^D");
       return TRUE;
     }
     if (c == 8) {
       if (p != line) {
-        chSequentialStreamPut(chp, c);
-        chSequentialStreamPut(chp, 0x20);
-        chSequentialStreamPut(chp, c);
+//         chSequentialStreamPut(chp, c);
+//         chSequentialStreamPut(chp, 0x20);
+//         chSequentialStreamPut(chp, c);
         p--;
       }
       continue;
     }
     if (c == '\r') {
-      chprintf(chp, "\r\n");
+//       chprintf(chp, "\r\n");
+      *p = 0;
+      return FALSE;
+    }
+    if (c == '\n') {
+//       chprintf(chp, "\n");
       *p = 0;
       return FALSE;
     }
     if (c < 0x20)
       continue;
     if (p < line + size - 1) {
-      chSequentialStreamPut(chp, c);
+//       chSequentialStreamPut(chp, c);
       *p++ = (char)c;
     }
   }
