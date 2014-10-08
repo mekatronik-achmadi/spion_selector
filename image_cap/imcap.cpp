@@ -18,6 +18,6 @@ int main(){
     cout << "Cannot read a frame from video stream" << endl;
   }
   else{
-    imwrite("raw_image.jpg",imgOriginal);
+    imwrite("input.png",imgOriginal);
   }
 }

@@ -4,10 +4,9 @@ clc
 
 tic
 
-
 %% Read Image
 info = 1;	% 1 with info - 0 without info
-image = imread('example.jpg');
+image = imread('example.png');
 
 %% Image segmentation with thresholding
 % Threshold ranges from 0 to 255
