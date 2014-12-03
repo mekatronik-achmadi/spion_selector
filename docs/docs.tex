@@ -1,0 +1,212 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,a4paper]{geometry} % Page margins
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+% Bibliography
+% \usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+% \addbibresource{bibliography.bib} % BibTeX bibliography file
+% \defbibheading{bibempty}{}
+
+% Index
+\usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
+\usepackage{makeidx} % Required to make an index
+\makeindex % Tells LaTeX to create the files required for indexing
+
+%----------------------------------------------------------------------------------------
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+
+\begin{document}
+
+\begingroup
+\thispagestyle{empty}
+  \AddToShipoutPicture*{\put(6,5){\includegraphics[scale=1]{background}}} % Image background
+  \centering
+  \vspace*{9cm}
+  \par\normalfont\fontsize{35}{35}\sffamily\selectfont
+  Bad Rear View Mirror Rejection System\par % Book title
+  \vspace*{1cm}
+  {\Huge Dokumentasi Teknis}\par % Author name
+  \vspace*{1cm}
+  {\large Laboratorium Rekayasa Fotonika}\par
+  {\large Teknik Fisika}\par
+  {\large Institut Teknologi Sepuluh November}\par
+  {\large 2014}\par
+\endgroup
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+% \noindent Copyright \copyright\ 2013 John Smith\\ % Copyright notice
+% \noindent \textsc{Published by Publisher}\\ % Publisher
+% \noindent \textsc{book-website.com}\\ % URL
+\noindent Written by Achmadi @2014 \\
+\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+% \noindent \textit{First printing, March 2013} % Printing/edition date
+
+\newpage
+\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+\pagestyle{empty} % No headers
+\tableofcontents % Print the table of contents itself
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+\pagestyle{fancy} % Print headers again
+
+\newpage
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapter{Development}
+\section{Platform}\index{Platform}
+\begin{flushleft}
+\hspace{10pt} Dalam proyek ini menggunakan platform yang bersifat opensources, kecuali dalam mendesain bagian mekanis.
+Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
+
+\itab{-Gratis dan Legal.}\\
+\itab{-Dukungan penuh komunitas.}\\
+\itab{-Kemudahan modifikasi software.}\\
+\itab{-Kemampuan software opensources untuk development.}\\
+
+\hspace{10pt} Untuk pihak pengembang lain yang berencana ikut mengembangkan dapat mengambil seluruh proyek di repository proyek berbasis Git di alamat:\\
+\vspace{5pt}
+\url{https://github.com/mekatronik-achmadi/spion\_selector}\\
+\vspace{5pt}
+\end{flushleft}
+
+\section{Software}\index{Software}
+\begin{flushleft}
+ \hspace{10pt} Berikut adalah daftar aplikasi yang digunakan dalam proyek ini:\\
+ \vspace{5pt}
+ \textbf{LinuxMint}\index{LinuxMint}\\
+ \hspace{10pt} LinuxMint adalah operating system yang berbasis kernel Linux dan paket manajemen Debian/Ubuntu.
+ Disarankan untuk menggunakan sistem Graphical User Interface (GUI) jenis KDE, Cinnamon, maupun MATE.\\
+ LinuxMint dapat di download di alamat:\\
+ \vspace{5pt}
+ \url{http://www.linuxmint.com/download.php}\\
+ \vspace{5pt}
+ Selain menggunakan LinuxMint, alternatif operating system lain yang disarankan adalah:\\
+ \itab{-Ubuntu dengan GUI berjenis Unity. Dapat didownload di \url{http://www.ubuntu.com/download/desktop}}\\
+ \itab{-Kubuntu dengan GUI berjenis KDE. Dapat didownload di \url{http://www.kubuntu.org/getkubuntu}}\\
+ \itab{-Raspbian yang dijalankan di board RaspberryPi.}\\
+ Dapat di didownload di \url{http://www.raspberrypi.org/downloads/}\\
+ \vspace{5pt}
+ \hspace{10pt} Operating system Raspbian dikhususkan untuk dijalankan di sistem tertanam (Embedded System) berbasis RaspberryPi, bukan untuk komputer/laptop umum.
+ Raspbian merupakan operating system berbasis Debian sehingga secara teknis instalasinya akan sama dengan operating system lainnya.\\
+ Namun tidak disarankan menggunakan Debian maupun turunan langsungnya (kecuali Raspbian) mengingat versi software yang tersedia kurang update.\\
+ \vspace{5pt}
+ \textbf{Octave}\index{Octave}\\
+ \hspace{10pt} GNU Octave adalah bahasa interpretasi (kebalikan dari kompilasi) level tinggi,utamanya digunakan untuk komputasi numerik. 
+ GNU Octave menyediakan kemampuan untuk menemukan solusi numerik baik untuk masalah linear maupun non-linier, termasuk juga untuk experimen numerik. 
+ Selain itu juga menyediakan kemampuan grafis yang memadai untuk visualisasi dan manipulasi data. 
+ Octave secara umum digunakan melalui interface terminal yang interaktif, tapi dapat pula digunakan untuk program non-interaktif. 
+ Bahasa interpretasi Octave sangat mirip dengan Matlab sehingga skrip dari kedua software tersebut dapat saling bertukar.
+ Octave memiliki kemampuan setara dengan Matlab,sekalipun belum memiliki fitur seperti Simulink dan GUI.
+ 
+ \hspace{10pt} Octave pertama kali ditulis oleh John W. Eaton ditahun 1988 dalam bahasa C++. 
+ Octave dirilis oleh GNU Project, sebuah proyek international pengembangan software gratis dan opensource yang dipimpin oleh R. Stallman. 
+ Kini Octave telah menjadi software yang dapat dijalankan di Linux, Windows, Mac,maupun Android. 
+ Octave tersedia dalam 19 bahasa berbeda dengan English US sebagai bahasa default. 
+ Octave dirilis sebagai software OpenSource dengan lisensi GNU GPL sehingga bersifat legal dan gratis.
+ Penjelasan lebih lanjut akan dilanjutkan di bab Octave tersendiri.\\
+ 
+ \vspace{5pt}
+ \textbf{OpenCV}\index{OpenCV}\\
+ \hspace{10pt} Pustaka OpenCV (Open Computer Vision) merupakan pustaka pemrograman berbasis C/C++/Python yang berisi fungsi-fungsi untuk akuisisi dan pengolahan citra.
+  Pustaka OpenCV juga merupakan proyek opensource yang bersifat gratis.
+  Saat ini pustaka OpenCV telah diterapkan di banyak website dan aplikasi mobile untuk deteksi wajah dan penjejak warna.
+  Dalam proyek ini, OpenCV tidak digunakan untuk mengolah gambar namun sebatas untuk mengambil gambar.
+  Bersama dengan Qt (C++), OpenCV ini dibentuk menjadi satu aplikasi untuk berkomunikasi dengan kamera melalui jalur USB dan mengambil gambar.
+  Penjelasan lebih lanjut akan dilanjutkan di bersama dalam bab Octave tersendiri.\\
+  
+ \vspace{5pt}
+ \textbf{GCC}\index{GCC}\\
+ \hspace{10pt} GCC (GNU Compiler Collection) merupakan koleksi kompiler yang di rilis oleh proyek GNU.
+ Kompiler merupakan program yang mengkonversi kode sumber menjadi program siap jalan.
+ Saat ini GCC mendukung bahasa C, C++, Java, dan banyak bahasa lain.
+ Selain itu GCC juga mendukung banyak arsitektur seperti i386, amd64, armhf, arm-eabi, dan banyak arsitektur lain.
+ Dalam proyek ini digunakan dua jenis varian GCC, yaitu g++ dan arm-gcc-none-eabi.
+ Varian g++ digunakan untuk mengkompilasi program berbasis OpenCV untuk pengambilan gambar.
+ Sedangkan varian arm-gcc-none-eabi digunakan untuk mengkompilasi program yang akan ditanamkan di sirkuit pengendali tangan robot.
+ Penjelasan lebih lanjut tentang arm-gcc-none-eabi akan dilanjutkan di bersama dalam bab RTOS tersendiri.\\
+ 
+ \vspace{5pt}
+ \textbf{EAGLE}\index{EAGLE}\\
+ \hspace{10pt} EAGLE (Easy Applicable Graphical Layout Editor) adalah software untuk mendesain papan circuit.
+ Desain yang dibuat di EAGLE berupa skema dan layout.
+ Versi yang dapat di instal secara gratis adalah versi Light dengan batasan:\\
+ \vspace{5pt}
+ \itab{-Luas maximal papan adalah 100mmx80mm.}\\
+ \itab{-Hanya dapat menggunakan 2 Lapisan, yaitu Top dan Bottom.}\\
+ \itab{-Fitur AutoRoute tidak tersedia.}\\
+ \vspace{5pt}
+ Namun diluar batasan tadi, fitur EAGLE dapat digunakan secara penuh, terutama ketersedian pustaka komponen yang sangat lengkap.
+ Penjelasan lebih lanjut akan dilanjutkan di bab Elektronik tersendiri.\\
+ 
+ \vspace{5pt}
+ \textbf{SolidWork}\index{SolidWork}\\
+ \hspace{10pt} SolidWork merupakan salah satu software CAD (Computer Aided Design) yang telah populer di perusahan-perusahan besar.
+ Software ini digunakan untuk mendesain sistem fisik dan mekanis dengan dukungan pustaka yang sangat lengkap.
+ Dalam proyek ini, software ini digunakan untuk mendesain sistem mekanis tangan robot.
+ Versi yang digunakan adalah 2013 dan SolidWork tergolong software yang tidak \textit{Backward Compatible}.
+ Software ini merupakan satu-satunya software berbayar yang digunakan dalam proyek ini.
+ Pembahasan lebih lanjut hanya akan difokuskan pada desain mekanisnya. 
+ Namun tentang software tidak dibahas lebih jauh mengingat sifatnya yang tidak gratis dan dijalankan di platform Windows 7.\\
+ 
+\end{flushleft}
+
+\section{License}\index{License}
+
+\newpage
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapter{Mekanik}
+\section{Gripper}\index{Gripper}
+
+\section{Arm}\index{Arm}
+
+\section{Meja}\index{Meja}
+
+\newpage
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapter{Elektronik}
+\section{Servo}\index{Servo}
+
+\section{SPS}\index{SPS}
+
+\section{Wiring}\index{Wiring}
+
+\section{PCB}\index{PCB}
+
+\newpage
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapter{Controller}
+\section{STM32}\index{STM32}
+
+\section{FTDI}\index{FTDI}
+
+\newpage
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapter{RTOS}
+\section{Threads}\index{Threads}
+
+\section{Commands}\index{Commands}
+
+\newpage
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapter{Octave}
+\section{Instalasi}\index{Instalasi}
+
+\end{document}
+
+
