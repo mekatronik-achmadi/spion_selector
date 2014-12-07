@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="wiring.svg"
+   inkscape:export-filename="/home/development/Projects/spion_selector/docs/screenshot/wiring/wiring.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="232.47142"
+     inkscape:cy="470.44927"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     inkscape:window-x="-2"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#008080"
+       id="rect2985"
+       width="322.85715"
+       height="240"
+       x="342.85715"
+       y="398.07648" />
+    <rect
+       style="fill:#cccccc"
+       id="rect2987"
+       width="131.42857"
+       height="71.428574"
+       x="291.42856"
+       y="423.79074"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,355.51153,529.31544)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-6"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,355.21566,545.44816)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-8"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,544.56968,573.91867)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-6-7"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,558.92102,573.88895)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-6-7-3"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,573.71617,574.40888)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-8-4"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,606.6201,572.66341)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-6-7-6"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,620.97143,572.63369)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff"
+       id="path2991-6-7-3-3"
+       sodipodi:cx="2.8571429"
+       sodipodi:cy="233.79076"
+       sodipodi:rx="25.714285"
+       sodipodi:ry="24.285715"
+       d="m 28.571428,233.79076 a 25.714285,24.285715 0 1 1 -51.42857,0 25.714285,24.285715 0 1 1 51.42857,0 z"
+       transform="matrix(0.19444445,0,0,0.20588235,635.76658,573.15362)" />
+    <rect
+       style="fill:#800000"
+       id="rect3074"
+       width="126.26907"
+       height="3.0304577"
+       x="152.02795"
+       y="424.0473" />
+    <rect
+       style="fill:#008000"
+       id="rect3074-3"
+       width="126.26907"
+       height="3.0304577"
+       x="150.51274"
+       y="446.27066" />
+    <rect
+       style="fill:#00ff00"
+       id="rect3074-5"
+       width="126.26907"
+       height="3.0304577"
+       x="151.01781"
+       y="470.51431" />
+    <rect
+       style="fill:#000080"
+       id="rect3074-0"
+       width="126.26907"
+       height="3.0304577"
+       x="151.01781"
+       y="492.23257" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3074-7"
+       width="126.26907"
+       height="3.0304577"
+       x="209.10158"
+       y="575.06506" />
+    <rect
+       style="fill:#000000"
+       id="rect3074-31"
+       width="126.26907"
+       height="3.0304577"
+       x="206.57619"
+       y="594.76312" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3074-2"
+       width="126.26907"
+       height="3.0304577"
+       x="641.73511"
+       y="-576.79712"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#000000"
+       id="rect3074-2-8"
+       width="126.26907"
+       height="3.0304577"
+       x="641.73517"
+       y="-562.65497"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#ffff00"
+       id="rect3074-2-89"
+       width="126.26907"
+       height="3.0304577"
+       x="641.73517"
+       y="-547.50269"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3074-2-0"
+       width="126.26907"
+       height="3.0304577"
+       x="642.24023"
+       y="-637.40631"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#000000"
+       id="rect3074-2-8-6"
+       width="126.26907"
+       height="3.0304577"
+       x="642.2403"
+       y="-623.26416"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="fill:#ffff00"
+       id="rect3074-2-89-0"
+       width="126.26907"
+       height="3.0304577"
+       x="642.2403"
+       y="-608.11188"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="65.659912"
+       y="428.59299"
+       id="text3204"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3206"
+         x="65.659912"
+         y="428.59299">VCC (5v 500mA)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="66.489937"
+       y="449.91049"
+       id="text3204-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3206-9"
+         x="66.489937"
+         y="449.91049">USB Data +</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="66.995018"
+       y="473.64908"
+       id="text3204-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3206-91"
+         x="66.995018"
+         y="473.64908">USB Data -</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="65.984863"
+       y="495.36734"
+       id="text3204-97"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3206-0"
+         x="65.984863"
+         y="495.36734">VSS (0v 500mA)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="115.98741"
+       y="579.71515"
+       id="text3204-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3206-3"
+         x="115.98741"
+         y="579.71515">VPWR (5v 2A)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="115.9874"
+       y="598.40289"
+       id="text3204-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3206-38"
+         x="115.9874"
+         y="598.40289">GND (0v 2A)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="774.36847"
+       y="-572.65216"
+       id="text3204-3-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3206-3-1"
+         x="774.36847"
+         y="-572.65216">VPWR (5v 2A)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="775.49512"
+       y="-557.38336"
+       id="text3204-0-2"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3206-38-1"
+         x="775.49512"
+         y="-557.38336">GND (0v 2A)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="775.74768"
+       y="-541.84253"
+       id="text3204-0-2-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3206-38-1-4"
+         x="775.74768"
+         y="-541.84253">SIGNAL (PWM)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="775.40912"
+       y="-634.01892"
+       id="text3204-3-6-0"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3206-3-1-0"
+         x="775.40912"
+         y="-634.01892">VPWR (5v 2A)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="776.53577"
+       y="-618.75012"
+       id="text3204-0-2-7"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3206-38-1-3"
+         x="776.53577"
+         y="-618.75012">GND (0v 2A)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="776.78833"
+       y="-603.20929"
+       id="text3204-0-2-6-9"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3206-38-1-4-3"
+         x="776.78833"
+         y="-603.20929">SIGNAL (PWM)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="517.85712"
+       y="875.2193"
+       id="text3028"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3030"
+         x="517.85712"
+         y="875.2193">SERVO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="595.57477"
+       y="875.35675"
+       id="text3028-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3030-9"
+         x="595.57477"
+         y="875.35675">SERVO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="39.146202"
+       y="591.78534"
+       id="text3028-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3030-98"
+         x="39.146202"
+         y="591.78534">SPS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-111.56808"
+       y="463.92819"
+       id="text3028-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3030-0"
+         x="-111.56808"
+         y="463.92819">USB KOMPUTER</tspan></text>
+  </g>
+</svg>

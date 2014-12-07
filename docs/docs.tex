@@ -21,8 +21,8 @@
 
 % Index
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
-\usepackage{makeidx} % Required to make an index
-\makeindex % Tells LaTeX to create the files required for indexing
+% \usepackage{makeidx} % Required to make an index
+% \makeindex % Tells LaTeX to create the files required for indexing
 
 %----------------------------------------------------------------------------------------
 
@@ -41,7 +41,7 @@
   \par\normalfont\fontsize{35}{35}\sffamily\selectfont
   Bad Rear View Mirror Rejection System\par % Book title
   \vspace*{1cm}
-  {\Huge Dokumentasi Teknis}\par % Author name
+  {\Huge Rancangan Teknis}\par % Author name
   \vspace*{1cm}
   {\large Laboratorium Rekayasa Fotonika}\par
   {\large Teknik Fisika}\par
@@ -69,7 +69,7 @@
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Development}
-\section{Platform}\index{Platform}
+\section{Platform}
 \begin{flushleft}
 \hspace{10pt} Dalam proyek ini menggunakan platform yang bersifat opensources, kecuali dalam mendesain bagian mekanis.
 Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
@@ -85,11 +85,11 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
 \vspace{5pt}
 \end{flushleft}
 
-\section{Software}\index{Software}
+\section{Software}
 \begin{flushleft}
  \hspace{10pt} Berikut adalah daftar aplikasi yang digunakan dalam proyek ini:\\
  \vspace{5pt}
- \textbf{LinuxMint}\index{LinuxMint}\\
+ \textbf{LinuxMint}\\
  \hspace{10pt} LinuxMint adalah operating system yang berbasis kernel Linux dan paket manajemen Debian/Ubuntu.
  Disarankan untuk menggunakan sistem Graphical User Interface (GUI) jenis KDE, Cinnamon, maupun MATE.\\
  LinuxMint dapat di download di alamat:\\
@@ -103,10 +103,14 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
  Dapat di didownload di \url{http://www.raspberrypi.org/downloads/}\\
  \vspace{5pt}
  \hspace{10pt} Operating system Raspbian dikhususkan untuk dijalankan di sistem tertanam (Embedded System) berbasis RaspberryPi, bukan untuk komputer/laptop umum.
- Raspbian merupakan operating system berbasis Debian sehingga secara teknis instalasinya akan sama dengan operating system lainnya.\\
- Namun tidak disarankan menggunakan Debian maupun turunan langsungnya (kecuali Raspbian) mengingat versi software yang tersedia kurang update.\\
+ Raspbian merupakan operating system berbasis Debian sehingga secara teknis instalasinya akan sama dengan operating system lainnya.
+ Namun tidak disarankan menggunakan Debian maupun turunan langsungnya (kecuali Raspbian) mengingat versi software yang tersedia kurang update.
+ Untuk mengupdate daftar paket dari repository yang telah diatur, hubungkan LinuxMint ke internet dan gunakan perintah berikut di terminal:\\
  \vspace{5pt}
- \textbf{Octave}\index{Octave}\\
+ \framebox[100pt]{sudo apt-get update}
+ 
+ \vspace{5pt}
+ \textbf{Octave}\\
  \hspace{10pt} GNU Octave adalah bahasa interpretasi (kebalikan dari kompilasi) level tinggi,utamanya digunakan untuk komputasi numerik. 
  GNU Octave menyediakan kemampuan untuk menemukan solusi numerik baik untuk masalah linear maupun non-linier, termasuk juga untuk experimen numerik. 
  Selain itu juga menyediakan kemampuan grafis yang memadai untuk visualisasi dan manipulasi data. 
@@ -121,8 +125,10 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
  Octave dirilis sebagai software OpenSource dengan lisensi GNU GPL sehingga bersifat legal dan gratis.
  Penjelasan lebih lanjut akan dilanjutkan di bab Octave tersendiri.\\
  
+ \hspace{10pt} Lebih lanjut tentang octave dapat dikunjungi di situs wiki: \url{http://wiki.octave.org/Main_Page}.
+ 
  \vspace{5pt}
- \textbf{OpenCV}\index{OpenCV}\\
+ \textbf{OpenCV}\\
  \hspace{10pt} Pustaka OpenCV (Open Computer Vision) merupakan pustaka pemrograman berbasis C/C++/Python yang berisi fungsi-fungsi untuk akuisisi dan pengolahan citra.
   Pustaka OpenCV juga merupakan proyek opensource yang bersifat gratis.
   Saat ini pustaka OpenCV telah diterapkan di banyak website dan aplikasi mobile untuk deteksi wajah dan penjejak warna.
@@ -130,8 +136,10 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
   Bersama dengan Qt (C++), OpenCV ini dibentuk menjadi satu aplikasi untuk berkomunikasi dengan kamera melalui jalur USB dan mengambil gambar.
   Penjelasan lebih lanjut akan dilanjutkan di bersama dalam bab Octave tersendiri.\\
   
+  \hspace{10pt} Lebih lanjut tentang opencv dapat dikunjungi di situs resmi: \url{http://opencv.org/}.
+  
  \vspace{5pt}
- \textbf{GCC}\index{GCC}\\
+ \textbf{GCC}\\
  \hspace{10pt} GCC (GNU Compiler Collection) merupakan koleksi kompiler yang di rilis oleh proyek GNU.
  Kompiler merupakan program yang mengkonversi kode sumber menjadi program siap jalan.
  Saat ini GCC mendukung bahasa C, C++, Java, dan banyak bahasa lain.
@@ -141,8 +149,18 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
  Sedangkan varian arm-gcc-none-eabi digunakan untuk mengkompilasi program yang akan ditanamkan di sirkuit pengendali tangan robot.
  Penjelasan lebih lanjut tentang arm-gcc-none-eabi akan dilanjutkan di bersama dalam bab RTOS tersendiri.\\
  
+ \hspace{10pt} Lebih lanjut tentang GCC dapat dikunjungi di situs resmi: \url{https://gcc.gnu.org/}.
+ 
  \vspace{5pt}
- \textbf{EAGLE}\index{EAGLE}\\
+ \textbf{Qt Creator}\\
+ \hspace{10pt} Qt Creator merupakan salah satu IDE (Integrated Development Environment) yang digunakan secara luas terutama untuk pengembangan software berbasis Qt.
+ Qt sendiri adalah kerangka kerja (framework) pengembangan software berbasis opensource yang memiliki fitur terlengkap dibandingkan framework lain sperti GTK,FLTK,dst.
+ Qt Creator merupakan IDE untuk proses penulisan dan pengecekan program, namun membutuhkan kompiler seperti GCC, g++, maupun arm-gcc untuk dapat mengkompilasi.
+ Dalam proyek ini Qt Creator digunakan dalam penulisan program untuk pengambilan gambar dan program yang ditanamkan di dalam chip.
+ 
+ \hspace{10pt} Lebih lanjut tentang Qt Creator dapat dikunjungi di situs resmi: \url{https://qtcreator/}.
+ \vspace{5pt}
+ \textbf{EAGLE}\\
  \hspace{10pt} EAGLE (Easy Applicable Graphical Layout Editor) adalah software untuk mendesain papan circuit.
  Desain yang dibuat di EAGLE berupa skema dan layout.
  Versi yang dapat di instal secara gratis adalah versi Light dengan batasan:\\
@@ -154,8 +172,10 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
  Namun diluar batasan tadi, fitur EAGLE dapat digunakan secara penuh, terutama ketersedian pustaka komponen yang sangat lengkap.
  Penjelasan lebih lanjut akan dilanjutkan di bab Elektronik tersendiri.\\
  
+ \hspace{10pt} Lebih lanjut tentang EAGLE dapat dikunjungi di situs resmi: \url{http://www.cadsoftusa.com/}.
+ 
  \vspace{5pt}
- \textbf{SolidWork}\index{SolidWork}\\
+ \textbf{SolidWork}\\
  \hspace{10pt} SolidWork merupakan salah satu software CAD (Computer Aided Design) yang telah populer di perusahan-perusahan besar.
  Software ini digunakan untuk mendesain sistem fisik dan mekanis dengan dukungan pustaka yang sangat lengkap.
  Dalam proyek ini, software ini digunakan untuk mendesain sistem mekanis tangan robot.
@@ -164,49 +184,174 @@ Keuntungan dalam menggunakan platform yang bersifat opensources antara lain:
  Pembahasan lebih lanjut hanya akan difokuskan pada desain mekanisnya. 
  Namun tentang software tidak dibahas lebih jauh mengingat sifatnya yang tidak gratis dan dijalankan di platform Windows 7.\\
  
+ \hspace{10pt} Lebih lanjut tentang octave dapat dikunjungi di situs resmi: \url{http://www.solidworks.com/}.
+ 
+ 
 \end{flushleft}
 
-\section{License}\index{License}
+\section{License}
+\hspace{10pt} Proyek ini memiliki lisensi bervariasi mengingat seluruh resources yang digunakan merupakan turunan dari banyak proyek opensource lain.
+Namun mengingat kemiripan dan kompatibilitas antar jenis lisensi (terutama jenis MIT, Apache, GPL dan LPGL) maka pengembang menentukan lisensi dari seluruh proyek ini adalah GPL v2.
+Lebih lanjut tentang lisensi dapat dilihat di alamat: \url{http://opensource.org/licenses/}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Mekanik}
-\section{Gripper}\index{Gripper}
+\section{Gripper}
 
-\section{Arm}\index{Arm}
+\section{Arm}
 
-\section{Meja}\index{Meja}
+\section{Meja}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Elektronik}
-\section{Servo}\index{Servo}
+\section{Servo}
 
-\section{SPS}\index{SPS}
+\section{SPS}
 
-\section{Wiring}\index{Wiring}
+\section{Wiring}
+\begin{flushleft}
+\hspace{10pt} Secara global, sistem tangan robot yang digunakan memiliki bagian utama yaitu:\\
+\itab{-Servo sebanyak 2 unit.}\\
+\itab{-Controller sebanyak 1 unit.}\\
+\itab{-SPS sebanyak 1 unit.}\\
+\itab{-Komputer sebanyak 1 unit.}\\
+\hspace{10pt} Untuk koneksi antara Controller dengan bagian-bagian lainnya dijelaskan seperti berikut:\\
+\itab{-Wiring antara Controller dan masing-masing servo memiliki 3 jalur yaitu jalur positif 6 volt, ground, dan sinyal.}\\
+\itab{-Wiring antara Controller dan SPS memiliki 2 jalur yaitu jalur positif 6 volt dan ground.}\\
+\itab{-Wiring antara Controller dan Komputer memiliki 4 jalur yaitu jalur positif 5 volt, ground, USB data postif, dan USB data negatif.}\\
+\hspace{10pt} Perlu diketahui bahwa ground SPS dan Servo terhubung, sedangkan dengan Komputer terpisah. 
+Perlu diketahui pula bahwa arus di jalur Komputer hanya 500mA, sedangkan di jalur SPS dan servo mencapai 2 Ampere.
+Untuk memudahkan maka berikut skema dari penjelasan diatas:\\
+\begin{center}
+ \includegraphics[width=300pt]{./screenshot/wiring/wiring}
+\end{center}
+\hspace{10pt} Sedangkan untuk Kamera dan Komputer terhubung secara langsung melalui jalur USB.
+\end{flushleft}
 
-\section{PCB}\index{PCB}
+\section{PCB}
+\begin{flushleft}
+ \hspace{10pt} PCB atau printed circuit board adalah papan yang telah dicetak jalur tembaga sebagai tempat komponen elektronik disolder dan jalur elektrisnya.
+Untuk dapat membuat PCB Controller yang digunakan dalam proyek ini maka diperlukan berikut ini:\\
+\itab{-Software CAD (Computer Aided Design).}\\
+\itab{-PCB Manufaktur.}\\
+\vspace{5pt}
+\hspace{10pt} Untuk PCB Manufaktur disini dipercayakan kepada CV. Maxtron Persada Indonesia.
+Perusahan ini merupakan perusahaan nasional yang bergerak di bidang manufaktur PCB kualitas tinggi dan penyedia mesin CNC untuk produksi PCB.
+Alasan mengapa dipilih perusahaan ini selain karena hasil manufakturnya yang berkualitas juga letaknya yang masih area Surabaya-Sidoarjo.
+Untuk informasi lebih lanjut dapat kunjungi situs resmi:\url{http://www.maxtronpersada.com/}\\
+\vspace{5pt}
+\hspace{10pt} Selanjutnya adalah Software Computer Aided Design. 
+Software CAD digunakan untuk mendesain baik skematik maupun layout sebelum di kirim ke perusahaan manufaktur PCB.
+Software CAD untuk PCB yang digunakan disini adalah EAGLE.
+Untuk menginstal EAGLE di LinuxMint dari internet dengan mengetikkan di terminal:\\
+\vspace{5pt}
+\framebox[150pt]{sudo apt-get install eagle}\\
+\vspace{5pt}
+Berikut adalah tampilan software EAGLE:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/eagle}\\
+\end{center}
+\vspace{5pt}
+Berikut adalah gambar skema PCB Controller yang dibuka dengan EAGLE schmeatic:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/eagle1}\\
+\end{center}
+Berikut adalah gambar skema PCB Controller yang dibuka dengan EAGLE boards:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/eagle2}
+\end{center}
+Berikut ilustrasinya secara 3D di posisi TOP dan BOTTOM:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/spion_3d_up}
+\end{center}
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/spion_3d_down}\\
+\end{center}
+Selanjutnya adalah beberapa bagian penting dari skema PCB Controller:\\
+\vspace{5pt}
+ \textbf{Pembangkit Clock}\\
+ \hspace{10pt} Pembangkit clock ini digunakan untuk membangkitkan pulsa elektrik yang akan digunakan sebagai acuan chip kontroller bekerja:
+ Terbagi dalam dua jenis frekuensi:\\
+ \itab{-32khz digunakan ketika chip utama di program}\\
+ \itab{-8mhz digunakan ketika chip utama berproses}\\
+ Berikut adalah potongan gambar skema PCB Controller yang menunjukkan bagian Pembangkit Clock:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/eagle3}\\
+\end{center}
+Berikut adalah potongan bagian tersebut dalam ilustrasi PCB 3D bagian TOP:
+\begin{center}
+ \includegraphics[width=100pt]{./screenshot/pcb/eagle4}\\
+\end{center}
+\vspace{5pt}
+ \textbf{Servo Signal Brigde}\\
+ \hspace{10pt} Dalam mengoperasikan aktuator servo, diperlukan komponen sebagai jembatan sinyal antara chip utama dan servo.
+ Beberapa alasan dibutuhkan jembatan sinyal adalah:\\
+ \itab{-Level tegangan chip utama adalah 3,3v sedangkan servo adalah 6 volt.}\\
+ \itab{-Chip utama bekerja pada arus dibawah 500mA sedangkan servo diatas 1A.}\\
+ \itab{-Servo menghasilkan induksi balik sehingga chip utama dan servo perlu memiliki acuan tegangan 0 terpisah.}\\
+ \hspace{10pt} Untuk memenuhi kebutuhan inilah digunakan IC PC817 sebagai jembatan antara chip utama dan servo.
+ Komponen PC817 terdiri dari LED (untuk sisi chip) dan PhotoTransistor (untuk sisi servo).
+ Mekanisme kerja PC817 adalah switch PhotoTransistor di kendalikan oleh sinyal cahaya dari LED.
+ Oleh karena sinyal antara sisi LED dan PhotoTransistor bukan sinyal elektris (melainkan cahaya), 
+ maka LED dan PhotoTransistor dapat bekerja di level tegangan, arus dan acuan tegangan yang terpisah.
+  Berikut adalah potongan gambar skema PCB Controller yang menunjukkan bagian Servo Signal Brigde:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/eagle5}\\
+\end{center}
+Berikut adalah potongan bagian tersebut dalam ilustrasi PCB 3D bagian TOP:
+\begin{center}
+ \includegraphics[width=200pt]{./screenshot/pcb/eagle6}\\
+\end{center}
+\vspace{5pt}
+ \textbf{Power Regulator}\\
+ \hspace{10pt}Power Regulator merupakan bagian opsional yang berfungsi untuk mengatur tegangan tenaga yang masuk ke circuit agar sesuai dengan kebutuhan.
+ Disini digunakan dua jenis IC regulator:\\
+ \itab{-7806 untuk tenaga ke servo sebesar 6 volt.}\\
+ \itab{-7805 untuk rangkaian ke chip sebesar 5 volt.}\\
+ \hspace{10pt}Pada setiap segmen telah ditambahkan LED untuk indikator dan Electrolite Capacitor untuk menstabilkan tegangan.
+ Arus yang dikeluar di setiap IC adalah 1A.
+ Khusus untuk servo, digunakan pula Transistor TIP 31C untuk menambahkan arus ke servo dengan sumber arus asli.
+ Namun dalam proyek ini, segmen ini tidak digunakan karena digantikan oleh:\\
+ \itab{-Untuk servo tenaga diperoleh dari SPS sebesar 5 volt 2 Ampere.}\\
+ \itab{-Untuk chip tenaga diperoleh dari USB Komputer sebesar 5 volt 500mA.}\\
+   Berikut adalah potongan gambar skema PCB Controller yang menunjukkan bagian Power Regulator:
+\begin{center}
+ \includegraphics[width=400pt]{./screenshot/pcb/eagle7}\\
+\end{center}
+Berikut adalah potongan bagian tersebut dalam ilustrasi PCB 3D bagian TOP:
+\begin{center}
+ \includegraphics[width=200pt]{./screenshot/pcb/eagle8}\\
+\end{center}
+\vspace{5pt}
+\hspace{10pt} Untuk komponen chip digital (STM32 dan FTDI akan dijelaskan pada bab selanjutnya.)
+\end{flushleft}
+
+\section{Kamera}
+\begin{flushleft}
+ 
+\end{flushleft}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Controller}
-\section{STM32}\index{STM32}
+\section{STM32}
 
-\section{FTDI}\index{FTDI}
+\section{FTDI}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{RTOS}
-\section{Threads}\index{Threads}
+\section{Threads}
 
-\section{Commands}\index{Commands}
+\section{Commands}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Octave}
-\section{Instalasi}\index{Instalasi}
+\section{Instalasi}
+\section{Image Processing}
+\section{Mekanisme}
 
 \end{document}
-
-
