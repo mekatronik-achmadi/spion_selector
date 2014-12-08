@@ -198,9 +198,19 @@ Lebih lanjut tentang lisensi dapat dilihat di alamat: \url{http://opensource.org
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Mekanik}
 \section{Gripper}
-
+\begin{center}
+ \includegraphics[width=250pt]{./screenshot/arm/GA}\\
+\end{center}
+\begin{center}
+ \includegraphics[width=250pt]{./screenshot/arm/GA1}\\
+\end{center}
 \section{Arm}
-
+\begin{center}
+ \includegraphics[width=250pt]{./screenshot/arm/GAF}\\
+\end{center}
+\begin{center}
+ \includegraphics[width=250pt]{./screenshot/arm/GAF1}\\
+\end{center}
 \section{Meja}
 
 \newpage
@@ -330,19 +340,72 @@ Berikut adalah potongan bagian tersebut dalam ilustrasi PCB 3D bagian TOP:
 
 \section{Kamera}
 \begin{flushleft}
- 
+ \hspace{10pt} Kamera yang digunakan adalah Logitech C190.
 \end{flushleft}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{Controller}
 \section{STM32}
+\begin{flushleft}
+ \hspace{10pt} STM32 adalah microcontroller 32bit yang kini telah digunakan di hampir semua instrumen.
+ STM32 adalah salah satu produk dari ST Microelectronic Inc, sebuah perusahaan semikonduktor asal Italia.
+ STM32 memiliki fitur lengkap dengan CPU 32bit plus FPU dan register-register baik 32bit, 16bit, 12bit, maupun 8bit.
+ Berikut beberapa data STM32 secara umum:\\
+ 
+ \hspace{10pt} Untuk jenis STM32 yang digunakan dalam proyek ini adalah STM32F103RBT6.
+ Berikut adalah gambar mapping pin yang digunakan:
+ \begin{center}
+ \includegraphics[width=300pt]{./screenshot/stm32/stm32_pin}\\
+\end{center}
+Berikut adalah gambar skematik STM32 di circuit Controller:
+ \begin{center}
+ \includegraphics[width=400pt]{./screenshot/stm32/stm321}\\
+\end{center}
+Berikut adalah potongan bagian tersebut dalam ilustrasi PCB 3D bagian BOTTOM:
+ \begin{center}
+ \includegraphics[width=300pt]{./screenshot/stm32/stm322}\\
+\end{center}
+\end{flushleft}
 
 \section{FTDI}
 
 \newpage
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 \chapter{RTOS}
+\section{HAL}
+\begin{flushleft}
+ \hspace{10pt} Pada bagian ini akan dijelaskan tentang HAL (Hardware Abstraction Layer) yang digunakan dalam proyek ini.
+ Karena penjelasan ini adalah bagian dari RTOS (Real Time Operating System) yang akan ditanamkan di chip controller, 
+ maka diperlukan software Qt Creator untuk membuka file-file kode sumber yang ada di folder project.
+ Untuk menginstal Qt Creator di LinuxMint dari internet dengan mengetikkan di terminal:\\
+\vspace{5pt}
+\framebox[300pt]{sudo apt-get install qtcreator qtdeclarative5-qtquick2-plugin}\\
+\vspace{5pt}
+\hspace{10pt} RTOS adalah kependekan dari Real Tipe Operating System.
+RTOS disini yang digunakan ChibiOS yang merupakan sekumpulan template kode sumber dalam bahasa C dan Makefile untuk membuat firmware multitask pada sistem ARM.
+Lebih lanjut tentang ChibiOS dapat dilihat di alamat: \url{http://chibios}
+\hspace{10pt} Sementara HAL itu sendiri adalah kependekan dari Hardware Abstraction Layer.
+HAL merupakan fitur pada RTOS yang memungkinkan pengembang tidak harus menggunakan register-register low level dalam membuat firmwarenya.
+Register low level sifatnya sangat bergantung kepada tipe dan merek chip sekalipun sama-sama memiliki arsitektur ARM.
+Untuk itulah dibuat fitur HAL sehingga pada level tertinggi dari hirarki fungsi, pengembang dapat menggunakan fungsi-fungsi yang sama untuk beragam tipe dan mereka chip selama telah RTOS memiliki HAL-nya.
+
+\hspace{10pt} Selanjutnya adalah membuka file bertipe *.creator.
+Maka akan muncul tampilan seperti berikut:
+\newpage
+ \begin{center}
+ \includegraphics[width=400pt]{./screenshot/rtos/hal1}\\
+\end{center}
+\hspace{10pt} Pembahasan hanya difokuskan pada kode dasar (codebase) yang ditulis oleh pengembang.
+Sedangkan untuk kode sisanya dapat menggunakan template untuk seri STM32F103 yang telah disiap oleh pengembang ChibiOS/RT.
+Sebelum mengatur HAL pengembang menyarankan agar membuka dulu file chconf.c yang berisi pengaturan terhadap kernel ChibiOS/RT.
+Disarankan untuk mematikan seluruh opsi Debugging untuk mengurangi konsumsi memory flash dan SRAM kecuali jika memang dibutuhkan.
+ \begin{center}
+ \includegraphics[width=300pt]{./screenshot/rtos/hal2}\\
+\end{center}
+\end{flushleft}
+
+
 \section{Threads}
 
 \section{Commands}
