@@ -12,9 +12,9 @@ while(vtry==0)
   system("sudo chmod 777 /dev/ttyUSB0");
   system("stty -F /dev/ttyUSB0 cs8 38400 -cstopb -parenb ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok");
   
-  system("echo -e \"untake\\r\" > /dev/ttyUSB0");
+  system("echo -e \"untake\\n\" > /dev/ttyUSB0");
   pause(1);
-  system("echo -e \"ungrip\\r\" > /dev/ttyUSB0");
+  system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
   
   vtake=0;
   
@@ -29,10 +29,10 @@ while(vtry==0)
     vgrip=input("choose your input= ")
     
     if(vgrip==1)
-	system("echo -e \"grip\\r\" > /dev/ttyUSB0");
+	system("echo -e \"grip\\n\" > /dev/ttyUSB0");
 	disp("gripped")
     elseif(vgrip==2)
-	system("echo -e \"ungrip\\r\" > /dev/ttyUSB0");
+	system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
 	disp("ungripped")
     elseif(vgrip==3)
 	vtake=1;
@@ -41,7 +41,7 @@ while(vtry==0)
   
   end
   
-  system("echo -e \"take\\r\" > /dev/ttyUSB0");
+  system("echo -e \"take\\n\" > /dev/ttyUSB0");
   pause(5);
   
   tic
@@ -183,11 +183,11 @@ while(vtry==0)
   toc
   
   if(vgood==1)
-    system("echo -e \"ungrip\\r\" > /dev/ttyUSB0");
+    system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
   elseif(vgood==0)
-    system("echo -e \"untake\\r\" > /dev/ttyUSB0");
+    system("echo -e \"untake\\n\" > /dev/ttyUSB0");
     pause(1);
-    system("echo -e \"ungrip\\r\" > /dev/ttyUSB0");
+    system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
   end
   
   srl_close(s0);
