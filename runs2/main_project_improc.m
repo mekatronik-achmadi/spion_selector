@@ -48,10 +48,10 @@ while(vtry==0)
 
   %% Read Image
   info = 1;	% 1 with info - 0 without info
-  for i=1:5
-    system('./image_cap');
-    pause(1);
-  end
+  %for i=1:5
+    %system('./image_cap');
+    %pause(1);
+  %end
   image = imread('input.png');
 
   %% Image segmentation with thresholding
