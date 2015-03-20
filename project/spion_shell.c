@@ -69,7 +69,8 @@ static void cmd_grip(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   };
 
-  vservo0=1500;
+//  vservo0=1500;
+  vservo0=500;
   return;
 }
 
@@ -80,7 +81,8 @@ static void cmd_ungrip(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   };
 
-  vservo0=500;
+//  vservo0=500;
+  vservo0=1500;
   return;
 }
 
@@ -91,7 +93,8 @@ static void cmd_take(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   };
 
-  vservo1=1500;
+//  vservo1=1500;
+  vservo1=500;
   return;
 }
 
@@ -102,7 +105,8 @@ static void cmd_untake(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   };
 
-  vservo1=500;
+//  vservo1=500;
+  vservo1=1500;
   return;
 }
 
