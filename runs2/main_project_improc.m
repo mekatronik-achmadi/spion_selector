@@ -9,39 +9,38 @@ while(vtry==0)
   clear
   clc
 
-  %system("sudo chmod 777 /dev/ttyUSB0");
-  %system("stty -F /dev/ttyUSB0 cs8 38400 -cstopb -parenb ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok");
+  %system('stty -F /dev/ttyUSB0 cs8 38400 -cstopb -parenb -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok');
   
-  %system("echo -e \"untake\\n\" > /dev/ttyUSB0");
+  %system('echo"untake\n" > /dev/ttyUSB0');
   %pause(1);
-  %system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
+  %system('echo"ungrip\n" > /dev/ttyUSB0');
   
   vtake=0;
   
   while(vtake==1)
     vgrip=0;
     
-    disp("select menu ")
-    disp("1. Grip ")
-    disp("2. Ungrip")
-    disp("3. Next Step")
+    disp('select menu ')
+    disp('1. Grip ')
+    disp('2. Ungrip')
+    disp('3. Next Step')
     
-    vgrip=input("choose your input= ")
+    vgrip=input('choose your input= ')
     
     if(vgrip==1)
-	%system("echo -e \"grip\\n\" > /dev/ttyUSB0");
-	disp("gripped")
+	%system('echo"grip\n" > /dev/ttyUSB0');
+	disp('gripped')
     elseif(vgrip==2)
-	%system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
-	disp("ungripped")
+	%system('echo"ungrip\n" > /dev/ttyUSB0');
+	disp('ungripped')
     elseif(vgrip==3)
 	vtake=1;
-	disp("processing...")
+	disp('processing...')
     end
   
   end
   
-  %system("echo -e \"take\\n\" > /dev/ttyUSB0");
+  %system('echo"take\n" > /dev/ttyUSB0');
   pause(5);
   
   tic
@@ -183,18 +182,18 @@ while(vtry==0)
   toc
   
   if(vgood==1)
-    %system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
+    %system('echo"ungrip\n" > /dev/ttyUSB0');
   elseif(vgood==0)
-    %system("echo -e \"untake\\n\" > /dev/ttyUSB0");
+    %system('echo"untake\n" > /dev/ttyUSB0');
     pause(1);
-    %system("echo -e \"ungrip\\n\" > /dev/ttyUSB0");
+    %system('echo"ungrip\n" > /dev/ttyUSB0');
   end
   
-  srl_close(s0);
+  %srl_close(s0);
   
-  disp("Run again?")
-  disp("0. Yes")
-  disp("1. No")
-  vtry= input("choose your input= ")
+  disp('Run again?')
+  disp('0. Yes')
+  disp('1. No')
+  vtry= input('choose your input= ')
 
 end
