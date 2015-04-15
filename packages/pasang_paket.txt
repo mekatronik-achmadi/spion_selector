@@ -1,0 +1,14 @@
+libqt5svg5-dev
+qtbase5-dev
+qtcreator
+qttools5-dev
+qt5-default
+
+libopencv-dev
+
+gnuplot-qt
+libgnuplot-iostream-dev
+octave
+octave-image
+octave-signal
+liboctave-dev
