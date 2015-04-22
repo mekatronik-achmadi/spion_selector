@@ -2,13 +2,6 @@ close all
 clear
 clc
 
-vtry=0;
-
-while(vtry==0)
-  close all
-  clear
-  clc
-
   %system('stty -F /dev/ttyUSB0 cs8 38400 -cstopb -parenb -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok');
   
   %system('echo"untake\n" > /dev/ttyUSB0');
@@ -41,17 +34,18 @@ while(vtry==0)
   end
   
   %system('echo"take\n" > /dev/ttyUSB0');
-  pause(5);
+  pause(1);
   
   tic
 
   %% Read Image
   info = 1;	% 1 with info - 0 without info
   %for i=1:5
-    %system('./image_cap');
-    %pause(1);
+        %system('./image_cap');
+        %pause(1);
   %end
-  image = imread('input.png');
+  %pause(1);
+  image = imread('ar5.png');
 
   %% Image segmentation with thresholding
   % Threshold ranges from 0 to 255
@@ -189,11 +183,4 @@ while(vtry==0)
     %system('echo"ungrip\n" > /dev/ttyUSB0');
   end
   
-  %srl_close(s0);
-  
-  disp('Run again?')
-  disp('0. Yes')
-  disp('1. No')
-  vtry= input('choose your input= ')
 
-end

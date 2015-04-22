@@ -2,9 +2,6 @@ close all
 clear
 clc
 
-vtry=0;
-
-while(vtry==0)
   close all
   clear
   clc
@@ -42,16 +39,17 @@ while(vtry==0)
   
   system('echo "take\n" > /dev/ttyUSB0');
   pause(1);
-  %pause(5);
+  %pause(1);
   
   %tic
 
   %%% Read Image
   %info = 1;	% 1 with info - 0 without info
-  %%for i=1:5
-    %%system('./image_cap');
-    %%pause(1);
-  %%end
+  %for i=1:5
+        %system('./image_cap');
+        %pause(1);
+  %end
+  %pause(1);
   %image = imread('input.png');
 
   %%% Image segmentation with thresholding
@@ -192,11 +190,3 @@ while(vtry==0)
     system('echo "ungrip\n" > /dev/ttyUSB0');
   end
   
-  %srl_close(s0);
-  
-  disp('Run again?')
-  disp('0. Yes')
-  disp('1. No')
-  vtry= input('choose your input= ')
-
-end

@@ -11,13 +11,13 @@ while(vtry==0)
 
   system('stty -F /dev/ttyUSB0 cs8 38400 -cstopb -parenb -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok');
   
-  system('echo -e "untake\n" > /dev/ttyUSB0');
+  system('echo "untake\n" > /dev/ttyUSB0');
   pause(1);
-  system('echo -e "ungrip\n" > /dev/ttyUSB0');
+  system('echo "ungrip\n" > /dev/ttyUSB0');
   
   vtake=0;
   
-  while(vtake==1)
+  while(vtake==0)
     vgrip=0;
     
     disp('select menu ')
@@ -28,10 +28,10 @@ while(vtry==0)
     vgrip=input('choose your input= ')
     
     if(vgrip==1)
-	system('echo -e "grip\n" > /dev/ttyUSB0');
+	system('echo "grip\n" > /dev/ttyUSB0');
 	disp('gripped')
     elseif(vgrip==2)
-	system('echo -e "ungrip\n" > /dev/ttyUSB0');
+	system('echo "ungrip\n" > /dev/ttyUSB0');
 	disp('ungripped')
     elseif(vgrip==3)
 	vtake=1;
@@ -40,17 +40,18 @@ while(vtry==0)
   
   end
   
-  system('echo -e "take\n" > /dev/ttyUSB0');
-  pause(5);
+  system('echo "take\n" > /dev/ttyUSB0');
+  pause(1);
   
   tic
 
   %% Read Image
   info = 1;	% 1 with info - 0 without info
   for i=1:5
-    system('./image_cap');
-    pause(1);
+        system('./image_cap');
+        pause(1);
   end
+  pause(1);
   image = imread('input.png');
 
   %% Image segmentation with thresholding
@@ -182,14 +183,12 @@ while(vtry==0)
   toc
   
   if(vgood==1)
-    system('echo -e "ungrip\n" > /dev/ttyUSB0');
+    system('echo "ungrip\n" > /dev/ttyUSB0');
   elseif(vgood==0)
-    system('echo -e "untake\n" > /dev/ttyUSB0');
+    system('echo "untake\n" > /dev/ttyUSB0');
     pause(1);
-    system('echo -e "ungrip\n" > /dev/ttyUSB0');
+    system('echo "ungrip\n" > /dev/ttyUSB0');
   end
-  
-  srl_close(s0);
   
   disp('Run again?')
   disp('0. Yes')
